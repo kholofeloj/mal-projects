@@ -1,0 +1,531 @@
+/* Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+
+/* Custom Styles */
+
+:root {
+
+    /* Primary Colors */
+
+    --deep-current: oklch(23.338% 0.09253 259.467);
+    --blue-trench: oklch(38.681% 0.11894 252.915);
+    --tide-break: oklch(59.706% 0.12501 234.149);
+    --coastal-mist: oklch(80.91% 0.05823 220.489);
+    --sea-foam-sky: oklch(92.609% 0.01638 245.262);
+
+
+    /* gradients */
+
+    --grad-primary:  hsl(218, 100%, 14%);
+    --grad-secondary:  hsla(218, 100%, 14%, 0.822);
+
+
+
+
+    /* typography */
+
+    --ff-main: 'Poppins', sans-serif;
+
+
+
+    --title: 2.25rem;
+    --mobile-title: 2.75rem;
+    --body-copy: 1.125rem;
+    --lh-body: 1.8;
+
+    --section-title: 2rem;
+    --subheading: 1.5rem;
+
+}
+
+section {
+    padding-top: 50px;
+}
+
+.section-title {
+    font-size: var(--section-title);
+    padding-bottom: 1.25rem;
+}
+
+.title {
+    font-size: var(--title);
+}
+
+.subheading {
+    font-size: var(--subheading);
+    font-weight: 600;
+    color: var(--deep-current);
+    margin-bottom: 1rem;
+}
+
+.description {
+    padding-bottom: 32px;
+}
+
+.body-copy {
+    font-size: var(--body-copy);
+    line-height: var(--lh-body);
+}
+
+span.bold {
+    font-weight: 700;
+    color: var(--blue-trench)
+}
+
+.container {
+    position: relative;
+    max-width: 1400px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* header {
+    position: relative;
+    height: 60px;
+    background-color: var(--sea-foam-sky);
+} */
+
+/************************************/
+/*******   Navigation bar   *********/
+/************************************/
+
+
+
+.logo {
+    height: 70px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: var(--sea-foam-sky);
+    align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
+    z-index: 9999;
+}
+
+.navbar .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.desktop-nav {
+    height: 80px;
+    min-width: 500px;
+    display: none;
+    justify-content: space-between;
+}
+
+.desktop-nav .nav-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu .nav-link {
+    text-transform: uppercase;
+    color: var(--blue-trench);
+    font-weight: 500;
+    padding: 18px;
+}
+
+.sys-theme {
+    height: 100%;
+    width: 100px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+}
+
+
+/************************************/
+/*******    Hero Section   **********/
+/************************************/
+
+.hamburger {
+    width: 80px;
+    height: 80px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn {
+    /* background-color: brown; */
+    height: 28px;
+    width: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger .line {
+    width: 34px;
+    height: 4px;
+    border-radius: 5px; 
+    background-color: var(--deep-current);
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    background-color: var(--sea-foam-sky);
+    width: 250px;
+    height: 100vh;
+}
+
+.mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+}
+
+.mobile-nav-menu .nav-link {
+    display: flex;
+    /* background-color: red; */
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    padding-left: 60px;
+    color: var(--deep-current);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+/************************************/
+/*******    Hero Section   **********/
+/************************************/
+
+.hero-section {
+    padding-top: 155px;
+    /* text-align: center; */
+    background:
+    linear-gradient(
+        90deg, var(--grad-primary) 35%, var(--grad-secondary)),
+        url('../../media/images/gears_3.jpg') no-repeat center center / cover
+    ;
+    height: 75vh;
+}
+
+.hero-section .title {
+    font-size: var(--title);
+    color: var(--sea-foam-sky);
+}
+
+.hero-section .body-copy {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: var(--sea-foam-sky);
+    line-height: var(--lh-body);
+    font-size: var(--body-copy);
+}
+
+.cta-container {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.cta {
+    text-align: center;
+    line-height: var(--body-copy);
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: var(--body-copy);
+    font-weight: 600;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .35);
+}
+
+.primary-cta {
+    background-color: var(--sea-foam-sky);
+    color: var(--blue-trench);
+}
+.secondary-cta {
+    border: 2px solid var(--tide-break);
+    color: var(--sea-foam-sky);
+}
+
+
+
+/***************************************/
+/*            About Section            */
+/***************************************/
+
+.about-us {
+    padding-bottom: 50px;
+}
+
+.primary-cta-inverse {
+    /* padding: 16px 54px; */
+    background-color: var(--blue-trench);
+    color: var(--sea-foam-sky);
+}
+
+
+/***************************************/
+/*         Services Section            */
+/***************************************/
+
+.services {
+    background-color: var(--sea-foam-sky);
+}
+.electrical-supplies, .engineering-consumables {
+    position: relative;
+    z-index: 1;
+    color: var(--sea-foam-sky);
+}
+
+.electrical-supplies .subheading, .engineering-consumables .subheading {
+    color: var(--sea-foam-sky);
+}
+
+.electrical-supplies::before, .engineering-consumables::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--tide-break);
+    margin-left: calc(-50vw + 50%);
+    z-index: -1;
+}
+
+.offers {
+    position: relative;
+    /* min-height: 360px; */
+    padding: 38px 0;
+}
+
+
+.offers img {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.list ul {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list li {
+    font-size: var(--body-copy);
+    line-height: var(--lh-body);
+}
+
+.list ul li i {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.services-cta {
+    width: 100%;
+    padding: 54px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+/***************************************/
+/*         Contact Us Section          */
+/***************************************/
+
+.contact-us {
+    padding: 50px 0;
+}
+
+.contact-form {
+    /* background: rgba(0, 0, 0, .1); */
+    padding: 20px;
+    max-width: 480px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: var(--body-copy);
+}
+
+.form-control input, .form-control textarea {
+    width: 100%;
+    font-family: var(--ff-main);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    background-color: var(--sea-foam-sky);
+}
+
+.form-control textarea {
+    resize: vertical;
+}
+
+.form-control input:focus, .form-control textarea:focus {
+    border-color: var(--blue-trench);
+    outline: none;
+}
+
+.form-control button {
+    background-color: var(--tide-break);
+    font-family: var(--ff-main);
+    color: var(--sea-foam-sky);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--body-copy);
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control button:hover {
+    background-color: var(--blue-trench);
+}
+
+
+
+/******************************************/
+/*                 footer                 */
+/******************************************/
+
+
+footer {
+    background-color: rgb(44, 44, 44);
+    padding-top: 50px;
+}
+
+.footer-heading {
+    position: relative;
+    font-size: var(--body-copy);
+    color: var(--sea-foam-sky);
+    margin-bottom: 15px;
+}
+
+.devider {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+}
+
+.footer-heading::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 48px;
+    background-color: var(--sea-foam-sky);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content-top {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-quick-links, .footer-services, .footer-contact {
+    margin-bottom: 34px;
+    color: var(--sea-foam-sky);
+}
+
+footer ul li {
+    font-size: var(--body-copy);
+    line-height: var(--lh-body);
+}
+
+footer ul li a {
+    color: var(--sea-foam-sky);
+}
+
+
+.footer-content-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    text-align: center;
+    gap: 25px;
+}
+
+.footer-content-bottom p {
+    color: var(--sea-foam-sky);
+    font-size: 14px;
+}
+
+.footer-content-bottom p span {
+    color: var(--coastal-mist);
+}
