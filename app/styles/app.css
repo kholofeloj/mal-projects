@@ -529,3 +529,73 @@ footer ul li a {
 .footer-content-bottom p span {
     color: var(--coastal-mist);
 }
+
+
+
+/*******************************************/
+/*******        About Us Page              */
+/*******************************************/
+
+
+.page-title-section {
+    padding-top: 220px;
+    padding-bottom: 150px;
+    background: 
+    linear-gradient(to right, var(--grad-secondary), var(--grad-secondary)),
+    url('../../media/images/gears_1.jpg') no-repeat center center / cover;
+    text-align: center;
+    color: var(--sea-foam-sky);
+}
+
+
+/************   Who Are We? Section *******************/
+.who-are-we {
+    padding-top: 100px;
+}
+
+.who-are-we .section-title {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.section-content img {
+    padding-bottom: 50px;
+}
+
+.hww {
+    padding-top: 50px;
+}
+
+.horizontal-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 35px 0;
+}
+
+.horizontal-card {
+    background-color: var(--sea-foam-sky);
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 25px;
+    overflow: hidden;
+}
+
+.horizontal-card .left-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 12rem;
+    margin-left: -45px;
+    border-radius: 10px;
+    color: var(--blue-trench);
+}
+
+.card-text {
+    color: var(--blue-trench);
+}
