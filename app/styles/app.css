@@ -710,6 +710,10 @@ footer ul li a {
     url('../../media/images/gears_2.jpg') no-repeat center center / cover;
 }
 
+.how-we-help {
+    padding-bottom: 64px;
+}
+
 .hwh-top-copy {
     display: flex;
     flex-direction: column;
@@ -733,4 +737,25 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+
+
+/*****************************************/
+/*         Mission Vision Section        */
+/*****************************************/
+
+.mission {
+    background-color: var(--sea-foam-sky);
+    padding: 64px 0;
+    color: var(--blue-trench);
+}
+
+.mission-statement, .vision-statement {
+    padding-bottom: 64px;
+}
+
+.mission-statement .body-copy,
+.vision-statement .body-copy {
+    padding-top: 32px;
 }
