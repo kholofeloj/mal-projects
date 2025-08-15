@@ -575,16 +575,14 @@ footer ul li a {
 
 .horizontal-card {
     background-color: var(--sea-foam-sky);
-    height: 120px;
-    border-radius: 10px;
     display: flex;
-    padding: 16px;
-    align-items: center;
-    gap: 25px;
-    overflow: hidden;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
-.horizontal-card .left-number {
+/* .horizontal-card .left-number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -594,8 +592,52 @@ footer ul li a {
     margin-left: -45px;
     border-radius: 10px;
     color: var(--blue-trench);
+} */
+
+.horizontal-card .left-number {
+    display: flex;
+    align-items: flex-start;
+    color: var(--blue-trench);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 12rem;
+}
+
+
+
+
+.card-title {
+    margin: 0;
+    font-weight: bold;
 }
 
 .card-text {
     color: var(--blue-trench);
+    margin: 0.5rem 0 0;
+}
+
+@media (max-width: 600px) {
+    .horizontal-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .horizontal-card .left-number {
+        margin: 0 0 0.5rem;
+    }
+}
+
+
+
+
+
+
+/*********************************/
+/*****  Vertical Cards      *****/
+/*********************************/
+
+.vertical-card .icon {
+    height: 24px;
 }
