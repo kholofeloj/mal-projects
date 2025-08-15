@@ -694,3 +694,43 @@ footer ul li a {
     padding: 84px 0;
     text-align: center;
 }
+
+
+
+/**************************************/
+/*      How can we help you           */
+/**************************************/
+
+.seperator {
+    padding: 45px 0;
+    color: white;
+    text-align: center;
+    background:
+    linear-gradient(to right, rgba(0, 115, 170, 0.85) 35%, rgba(0, 115, 170, 0.85)), 
+    url('../../media/images/gears_2.jpg') no-repeat center center / cover;
+}
+
+.hwh-top-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 32px;
+}
+
+.blue-cards {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 32px;
+}
+
+.blue-card {
+    background-color: var(--tide-break);
+    border-radius: 10px;
+    padding: 24px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
